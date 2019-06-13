@@ -5,13 +5,18 @@ This project was started during the Chicago Ruby hack night on Jun 12th, 2019. A
 Ruby version: '2.6.3'  
 Rails version: '5.2.3'
 
-## To run:
+## To run locally:
 
 1. Clone from https://github.com/adbasner/RecycleHack.git'
 2. Create a database 'rails db:create'
 3. Run migration 'rails db:migrate'
 4. See db 'raild db:seed'
 5. Start server 'rails s'
+
+## Web version
+
+To see a deployed version on heroku, visit:
+"https://basner-recycle-hack.herokuapp.com/"
 
 ## Description
 
