@@ -1,5 +1,5 @@
-<div class="container" id="main">
-  <%= form_with(model: @trash, url: trash_index_path, local: true) do |form| %>
+<div class="container mb-5" id="main">
+  <%= form_with(url: trash_index_path, local: true) do |form| %>
 
     <div class="form-group">
       <label for="name">Material</label>
@@ -38,7 +38,7 @@
         <label class="form-check-label" for="drop-off">Drop Off</label>
       </div>
       <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="mail" id="drop-off" value="Both">
+        <input class="form-check-input" type="radio" name="mail" id="drop-off" value="Mail and drop-off">
         <label class="form-check-label" for="drop-off">Both</label>
       </div>
     </div>
@@ -63,6 +63,6 @@
       <input type="text" class="form-control" id="details" placeholder="Don't drink it" name="details">
     </div>
 
-    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary">Submit</button>
   <% end %>
 </div>

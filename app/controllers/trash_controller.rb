@@ -4,16 +4,7 @@ class TrashController < ApplicationController
   end
 
   def create
-    @trash = Trash.new(
-      name: params[:name],
-      accepted: params[:accepted],
-      alternative: params[:alternative],
-      mail: params[:mail],
-      address: params[:address],
-      phone: params[:phone],
-      website: params[:website],
-      details: params[:details],
-      )
+    @trash = Trash.new(post_params)
     if @trash.save
       redirect_to @trash
     else
@@ -27,6 +18,11 @@ class TrashController < ApplicationController
   end
 
   def new
-    # @trash = Trash.new
+  end
+
+  private
+
+  def post_params
+    params.permit(:name, :accepted, :alternative, :mail, :address, :phone, :website, :details)
   end
 end
