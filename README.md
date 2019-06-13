@@ -40,14 +40,14 @@ Challenge 5: Provide a section with links to Recycling guides and resources to h
 Solution 5: A learn more drop down was added to the navbar.
 
 ## Other Comments
-The syling was down using bootstrap 4. There is still a lot to be desired, but design wasn't a priority.
+The syling was down using bootstrap 4. There is a lot to be desired, but design wasn't a priority.
 
-The add item function is not restricted by a log in or admin, so anyone visiting the page could add something.  If this was a live app, that would be absolutely terrible.
+The add item function is not restricted by a log in or admin, so anyone visiting the page could add something.  If this was a live production app, that would be absolutely terrible.
 
 There are currently no:
 * Tests
 * Validations
 * Authorizations or authentications
-* Way to edit or delete items (not part of the challenge but could be done with rest routes)
+* Ways to edit or delete items (not part of the challenge but could be done with rest routes)
 
 I currently do not plan on adding any of these features and as of now, the project will not be updated.
