@@ -15,6 +15,7 @@
 //= require_tree .
 
 // When the user scrolls down 20px from the top of the document, show the button
+
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -29,4 +30,27 @@ function scrollFunction() {
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+function select() {
+  let selected = document.getElementById("formSelect").value;
+  alert("You selected " + selected);
+
+
+  // document.getElementById("main").innerHTML = 
+  //   "<h2 id=\"<%= item[\"Material\"]  %>\"><%= item[\"Material\"] %></h2>" + 
+  //   "<h5>Is Material accepted in Chicago's Blue Cart Program or at Recycling Drop-Off Centers?</h5>" +
+  //   "<p><%= item[\"Is Material accepted in Chicago's Blue Cart Program or at Recycling Drop-Off Centers?\"] %></p>" +
+  //  "<h5>Alternative Recycling Outlet</h5>" +
+  //   "<p><%= item[\"Alternative Recycling Outlet\"] %></p>" +
+  //   "<h5>Mail or Drop-Off Program?</h5>" +
+  //   "<p><%= item[\"Mail or Drop-Off Program?\"] %></p> " +
+  //   "<h5>Address</h5>" +
+  //   "<p><%= item[\"Address\"] %></p>" +
+  //   "<h5>Phone</h5>" +
+  //   "<p><%= item[\"Phone\"] %></p>" +
+  //   "<h5>Website</h5>" +
+  //   "<p><%= item[\"Website\"] %></p>" +
+  //   "<h5>Details and/or restrictions</h5>" +
+  //   "<p><%= item[\"Details and/or Restrictions\"] %></p>";
 }

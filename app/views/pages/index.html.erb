@@ -2,49 +2,5 @@
   <h1 class="display-4 center">Ruby Hack Night</h1>
   <p class="lead">Will it recycle?</p>
   <hr class="my-4">
-  <p>Check out to following items to determine if you can recycle it or trash it.</p>
+  <p>Stop throwing trash away and recycle it! See if various items can be recycled.</p>
 </div>
-
-<nav class="navbar navbar-dark bg-dark mb-4">
-  <div class="container">
-    <a class="navbar-brand" href="localhost:3000/">Home</a>
-    <div class="dropdown">
-      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Items
-      </a>
-
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <% @trash.each do |item| %>
-          <a class="dropdown-item" href="#<%= item["Material"] %>"><%= item["Material"] %></a>
-        <% end %>
-      </div>
-    </div>
-    <form class="form-inline my-2 my-lg-0">
-      <input id="search" name="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    </form>
-  </div>
-</nav>
-
-<div class="container">
-  <% @trash.each do |item| %>
-    <h2 id="<%= item["Material"]  %>"><%= item["Material"] %></h2>
-
-    <h5>Is Material accepted in Chicago's Blue Cart Program or at Recycling Drop-Off Centers?</h5>
-    <p><%= item["Is Material accepted in Chicago's Blue Cart Program or at Recycling Drop-Off Centers?"] %></p>
-    <h5>Alternative Recycling Outlet</h5>
-    <p><%= item["Alternative Recycling Outlet"] %></p>
-    <h5>Mail or Drop-Off Program?</h5>
-    <p><%= item["Mail or Drop-Off Program?"] %></p> 
-    <h5>Address</h5>
-    <p><%= item["Address"] %></p>
-    <h5>Phone</h5>
-    <p><%= item["Phone"] %></p>
-    <h5>Website</h5>
-    <p><%= item["Website"] %></p>
-    <h5>Details and/or restrictions</h5>
-    <p><%= item["Details and/or Restrictions"] %></p>
-    <hr>
-  <% end %>
-</div>
-
-<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>

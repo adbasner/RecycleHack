@@ -1,0 +1,23 @@
+<div class="container" id="main">
+  <% @trash.each do |trash| %>
+    <h2><%= trash.name%></h2>
+    <h5>Is Material accepted in Chicago's Blue Cart Program or at Recycling Drop-Off Centers?</h5>
+    <p><%= trash.accepted %></p>
+    <h5>Alternative Recycling Outlet</h5>
+    <p><%= trash.alternative %></p>
+    <h5>Mail or Drop-Off Program?</h5>
+    <p><%= trash.mail %></p> 
+    <h5>Address</h5>
+    <p><%= trash.address %></p>
+    <h5>Phone</h5>
+    <p><%= trash.phone %></p>
+    <h5>Website</h5>
+    <p><%= trash.website %></p>
+    <h5>Details and/or restrictions</h5>
+    <p><%= trash.details %></p>
+    <hr>
+  <% end %>
+</div>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+ 
