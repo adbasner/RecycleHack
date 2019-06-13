@@ -1,0 +1,68 @@
+<div class="container" id="main">
+  <%= form_with(model: @trash, url: trash_index_path, local: true) do |form| %>
+
+    <div class="form-group">
+      <label for="name">Material</label>
+      <input type="text" class="form-control" id="name" placeholder="Material" name="name">
+    </div>
+    <div>
+      <label for="accepted">Is Material accepted in Chicago's Blue Cart Program or at Recycling Drop-Off Centers?</label>
+    </div>
+    <div class="form-group">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="accepted" id="acceptedYes" value="Yes">
+        <label class="form-check-label" for="acceptedYes">Yes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="accepted" id="acceptedNo" value="No">
+        <label class="form-check-label" for="acceptedNo">No</label>
+      </div>
+    </div>
+    
+
+    <div class="form-group">
+      <label for="alternative">Alternative Recycling Outlet</label>
+      <input type="text" class="form-control" id="alternative" placeholder="Name of location" name="alternative">
+    </div>
+
+    <div>
+      <label for="mail">Mail or Drop-Off Program?</label>
+    </div>
+    <div class="form-group">
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="mail" id="mail" value="Mail">
+        <label class="form-check-label" for="mail">Mail</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="mail" id="drop-off" value="Drop">
+        <label class="form-check-label" for="drop-off">Drop Off</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="mail" id="drop-off" value="Both">
+        <label class="form-check-label" for="drop-off">Both</label>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address</label>
+      <input type="text" class="form-control" id="address" placeholder="123 Main St, Chicago, IL 60626" name="address">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Phone Number</label>
+      <input type="text" class="form-control" id="phone" placeholder="867-5309" name="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="website">Website</label>
+      <input type="text" class="form-control" id="website" placeholder="www.awesome.com" name="website">
+    </div>
+
+    <div class="form-group">
+      <label for="details">Details and/or restrictions</label>
+      <input type="text" class="form-control" id="details" placeholder="Don't drink it" name="details">
+    </div>
+
+    <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+  <% end %>
+</div>
