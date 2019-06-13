@@ -2,7 +2,7 @@
 
 This project was started during the Chicago Ruby hack night on Jun 12th, 2019. A description of the project is located at "https://github.com/chicagoruby/hack-night-is-it-recyclable"
 
-Ruby version: '2.6.3' 
+Ruby version: '2.6.3'  
 Rails version: '5.2.3'
 
 To run:
