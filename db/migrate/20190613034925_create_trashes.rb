@@ -1,6 +1,5 @@
 class CreateTrashes < ActiveRecord::Migration[5.2]
   def change
-    drop_table :trashes
     create_table :trashes do |t|
       t.string :name
       t.string :accepted
