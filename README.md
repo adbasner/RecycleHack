@@ -1,24 +1,35 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was started during the Chicago Ruby hack night on Jun 12th, 2019. A description of the project is located at "https://github.com/chicagoruby/hack-night-is-it-recyclable"
 
-Things you may want to cover:
+Ruby version: '2.6.3' 
+Rails version: '5.2.3'
 
-* Ruby version
+To run:
 
-* System dependencies
+1. Clone from https://github.com/adbasner/RecycleHack.git'
+2. Create a database 'rails db:create'
+3. Run migration 'rails db:migrate'
+4. See db 'raild db:seed'
+5. Start server 'rails s'
 
-* Configuration
+Description
 
-* Database creation
+This app could be made with any framework or language, I chose to use Ruby on Rails, mostly due to familiarity even though it might be a bit much for this project.
 
-* Database initialization
+There is a single table in the database titled trash (since we are looking through trash items to see if they are recyclable) and it is populated when running the seed file by getting the data from the JSON file found in the data folder of the project github. "https://raw.githubusercontent.com/chicagoruby/hack-night-is-it-recyclable/master/data/chicago-recycling-guide.json"
 
-* How to run the test suite
+Challenge 1: Display the JSON data to the user.
+Solution 1: There is an index link in the navbar where you can browse through every item.  This is a Index rest route.
 
-* Services (job queues, cache servers, search engines, etc.)
+Challenge 2: Using the same JSON data, create a dropdown of the materials and show the line item for the selected material.
+Solution 2: A drop down nav allows you to view an individual show page for the selected item. The pages are Show rest routes.
 
-* Deployment instructions
+Challenge 3: Allow the user to search for a particular material. 
+Solution 3: The search box in the nav searches for all materials that contain a particular phrase.  Example: a search for paint returns 4 types of paint, oil based, latex, sprary cans full and empty. The search is case insenstive.
 
-* ...
+Challenge 4: Provide the ability to add to the list. 
+Solution 4: There is an option to add a new item to the data base, link in the nav.  This is a New rest route, which posts to the Create rest route.
+
+Challenge 5: Provide a section with links to Recycling guides and resources to help people trying to find more information. 
+Solution 5: A learn more drop down was added to the navbar.

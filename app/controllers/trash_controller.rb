@@ -5,10 +5,6 @@ class TrashController < ApplicationController
     if params[:search] 
       search_term = params[:search].downcase
       @trash = Trash.where('lower(name) LIKE ?', "%#{search_term}%")
-      # puts @trash
-      # if @trash.length == 0
-      #   render html: '<p>No such thing exists</p>'
-      # end
     end
   end
 
