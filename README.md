@@ -1,4 +1,4 @@
-# README
+# Can I Recycle... - Ruby Hack Night
 
 This project was started during the Chicago Ruby hack night on Jun 12th, 2019. A description of the project is located at "https://github.com/chicagoruby/hack-night-is-it-recyclable"
 
