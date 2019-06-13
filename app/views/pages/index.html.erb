@@ -6,22 +6,23 @@
 </div>
 
 <nav class="navbar navbar-dark bg-dark mb-4">
-  <a class="navbar-brand" href="#">Choose an item to the right</a>
-  <div class="dropdown">
-    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Dropdown link
-    </a>
+  <div class="container">
+    <a class="navbar-brand" href="localhost:3000/">Home</a>
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Items
+      </a>
 
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      <% @trash.each do |item| %>
-        <a class="dropdown-item" href="#<%= item["Material"] %>"><%= item["Material"] %></a>
-      <% end %>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <% @trash.each do |item| %>
+          <a class="dropdown-item" href="#<%= item["Material"] %>"><%= item["Material"] %></a>
+        <% end %>
+      </div>
     </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input id="search" name="search" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    </form>
   </div>
-  <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
 </nav>
 
 <div class="container">
