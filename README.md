@@ -10,7 +10,7 @@ Rails version: '5.2.3'
 1. Clone from https://github.com/adbasner/RecycleHack.git'
 2. Create a database 'rails db:create'
 3. Run migration 'rails db:migrate'
-4. See db 'raild db:seed'
+4. Seed the database 'rails db:seed'
 5. Start server 'rails s'
 
 ## Web version
