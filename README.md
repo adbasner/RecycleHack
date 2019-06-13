@@ -24,19 +24,19 @@ This app could be made with any framework or language, I chose to use Ruby on Ra
 
 There is a single table in the database titled trash (since we are looking through trash items to see if they are recyclable) and it is populated when running the seed file by getting the data from the JSON file found in the data folder of the project github. "https://raw.githubusercontent.com/chicagoruby/hack-night-is-it-recyclable/master/data/chicago-recycling-guide.json"
 
-Challenge 1: Display the JSON data to the user.
+Challenge 1: Display the JSON data to the user.  
 Solution 1: There is an index link in the navbar where you can browse through every item.  This is a Index rest route.
 
-Challenge 2: Using the same JSON data, create a dropdown of the materials and show the line item for the selected material.
+Challenge 2: Using the same JSON data, create a dropdown of the materials and show the line item for the selected material.  
 Solution 2: A drop down nav allows you to view an individual show page for the selected item. The pages are Show rest routes.
 
-Challenge 3: Allow the user to search for a particular material. 
+Challenge 3: Allow the user to search for a particular material.  
 Solution 3: The search box in the nav searches for all materials that contain a particular phrase.  Example: a search for paint returns 4 types of paint, oil based, latex, sprary cans full and empty. The search is case insenstive.
 
-Challenge 4: Provide the ability to add to the list. 
+Challenge 4: Provide the ability to add to the list.   
 Solution 4: There is an option to add a new item to the data base, link in the nav.  This is a New rest route, which posts to the Create rest route.
 
-Challenge 5: Provide a section with links to Recycling guides and resources to help people trying to find more information. 
+Challenge 5: Provide a section with links to Recycling guides and resources to help people trying to find more information.  
 Solution 5: A learn more drop down was added to the navbar.
 
 ## Other Comments
