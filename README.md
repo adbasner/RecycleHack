@@ -5,7 +5,7 @@ This project was started during the Chicago Ruby hack night on Jun 12th, 2019. A
 Ruby version: '2.6.3'  
 Rails version: '5.2.3'
 
-To run:
+## To run:
 
 1. Clone from https://github.com/adbasner/RecycleHack.git'
 2. Create a database 'rails db:create'
@@ -13,7 +13,7 @@ To run:
 4. See db 'raild db:seed'
 5. Start server 'rails s'
 
-Description
+## Description
 
 This app could be made with any framework or language, I chose to use Ruby on Rails, mostly due to familiarity even though it might be a bit much for this project.
 
@@ -33,3 +33,16 @@ Solution 4: There is an option to add a new item to the data base, link in the n
 
 Challenge 5: Provide a section with links to Recycling guides and resources to help people trying to find more information. 
 Solution 5: A learn more drop down was added to the navbar.
+
+## Other Comments
+The syling was down using bootstrap 4. There is still a lot to be desired, but design wasn't a priority.
+
+The add item function is not restricted by a log in or admin, so anyone visiting the page could add something.  If this was a live app, that would be absolutely terrible.
+
+There are currently no:
+* Tests
+* Validations
+* Authorizations or authentications
+* Way to edit or delete items (not part of the challenge but could be done with rest routes)
+
+I currently do not plan on adding any of these features and as of now, the project will not be updated.
