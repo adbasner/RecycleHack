@@ -44,6 +44,7 @@ Challenge 4: Provide the ability to add to the list.
 Solution 4: There is an option to add a new item to the data base, link in the nav.  This is a New rest route, which posts to the Create rest route.  
 ___ 
 Challenge 5: Provide a section with links to Recycling guides and resources to help people trying to find more information.  
+  
 Solution 5: A learn more drop down was added to the navbar.  
 ___
   
