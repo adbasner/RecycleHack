@@ -29,7 +29,7 @@ There is a single table in the database titled trash (since we are looking throu
 Challenge 1: Display the JSON data to the user.  
 
 Solution 1: There is an index link in the navbar where you can browse through every item.  This is a Index rest route.
-  
+___
 Challenge 2: Using the same JSON data, create a dropdown of the materials and show the line item for the selected material.  
   
 Solution 2: A drop down nav allows you to view an individual show page for the selected item. The pages are Show rest routes.  
