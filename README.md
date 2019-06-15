@@ -8,10 +8,12 @@ Rails version: '5.2.3'
 ## To run locally:
 
 1. Clone from https://github.com/adbasner/RecycleHack.git'
-2. Create a database 'rails db:create'
-3. Run migration 'rails db:migrate'
-4. Seed the database 'rails db:seed'
-5. Start server 'rails s'
+2. Run 'bundle install'
+3. Create a database 'rails db:create'
+4. Run migration 'rails db:migrate'
+5. Seed the database 'rails db:seed'
+6. Start server 'rails s'
+7. View in your favorite browser at 'localhost:3000'
 
 ## Web version
 
